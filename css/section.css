@@ -1,0 +1,152 @@
+/* Navigation container */
+.nav-buttons {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: rgba(255, 245, 230, 0.95);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(128, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.nav-buttons:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Navigation buttons */
+.nav-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    text-align: center;
+}
+
+.nav-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button.bg-maroon {
+    background-color: rgb(128, 0, 0);
+}
+
+.nav-button.bg-maroon:hover {
+    background-color: rgb(150, 0, 0);
+}
+/*-----body-----*/
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 40px;
+    padding: 20px;
+    background-color: none; /* Light beige background */
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px; /* Increase size */
+    line-height: 1.6; /* Adjust spacing */
+    color: #222; /* Darker text */
+    max-width: 600px; /* Set readable width */
+    background-color: none; /* Match background */
+    padding: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 40;
+    max-width: 600px; /* Keep width consistent */
+}
+
+li {
+    font-size: 18px; /* Adjust font size */
+    line-height: 1.6; /* Improve readability */
+    color: #222; /* Dark text */
+    padding: 5px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add soft shadow */
+}
+/* Content sections */
+.content-section {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.content-section.hidden {
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+}
+
+/* Section transitions */
+.section-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.section-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.section-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/*-----user growth column------*/
+.process-chunk-two-column {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between image and text */
+}
+
+.user-growth {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text-container {
+    flex: 1; /* Allow the text container to grow */
+}
+/*-----line------*/
+
+.flex {
+    display: flex; /* Ensure flex display */
+    align-items: center; /* Center items vertically */
+}
+/*------personas------*/
+.persona-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the images */
+    gap: 10px; /* Optional: space between the images */
+}
+
+.persona-column {
+    flex: 1; /* Allow each column to take equal space */
+    max-width: 100%; /* Ensure the column does not exceed the container */
+}
+
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+/*------stratergy------*/

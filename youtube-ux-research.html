@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube UX Research - Joy's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/section.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        peach: '#FFF1D6',
+                        navy: '#424874',
+                        maroon: '#800000',
+                        cream: '#FFF5E6'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-cream">
+    <!-- Navigation -->
+    <nav class="p-8 flex justify-between max-w-7xl mx-auto">
+        <a href="index1.html" class="text-maroon hover:text-maroon/80 transition-colors">
+            <i class="fas fa-arrow-left mr-2"></i> Back to Portfolio
+        </a>
+        <div class="space-x-12">
+            <a href="#about" class="nav-link text-maroon font-medium tracking-widest">ABOUT</a>
+            <a href="#projects" class="nav-link text-maroon font-medium tracking-widest">PROJECTS</a>
+            <a href="#contact" class="nav-link text-maroon font-medium tracking-widest">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-maroon text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h1 class="text-5xl font-bold mb-8">Youtube UX Research</h1>
+                <div class="flex items-start gap-12">
+                    <div class="w-1/2">
+                        <img src="img/mockup.png" alt="YouTube UX Research" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="w-1/2">
+                        <h2 class="text-2xl font-semibold mb-4">Project Overview</h2>
+                        <p class="text-cream/90 leading-relaxed mb-6">
+                            The main goal of this UX study project is to improve the YouTube user experience by finding and fixing the most important usability issues. We looked at how people use YouTube and a lot of different kinds of content. Because of this, the UX can use design improvements to create a better experience for both viewers and content creators. The main goal of this project is to find problems with annoying ads, video recommendations, and user interface issues. We also want to make finding user research, making testing, and analyzing easier. This will help us come up with good design solutions that make the platform easier to use overall.
+                        </p>
+                        <div class="grid grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="font-semibold mb-2">Timeline</h3>
+                                <p class="text-cream/80">4-week project<br><br>November 14 2024  December 12 2024</p>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-2">Tool</h3>
+                                <p class="text-cream/80">Figma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Research Section -->
+    <section id="research" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-maroon">Research</h2>
+                
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+                    <h3 class="text-2xl font-semibold mb-6">What is Youtube?</h3>
+                    <p class="text-gray-700 leading-relaxed mb-8">
+                        It is free video sharing website that makes it easy to watch online videos. You can even create and upload your own videos to share with others. Originally created in 2005, YouTube has become one of the most popular websites, with streaming around 5 billion hours every month.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold mb-6">Age Demographics</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full mb-8">
+                            <thead class="bg-maroon text-white">
+                                <tr>
+                                    <th class="py-3 px-4 text-left">Age group</th>
+                                    <th class="py-3 px-4 text-left">Share of global YouTube users</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="py-3 px-4">18-24</td>
+                                    <td class="py-3 px-4">15.5%</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">25-34</td>
+                                    <td class="py-3 px-4">23.3%</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">35-44</td>
+                                    <td class="py-3 px-4">17.5%</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">45-54</td>
+                                    <td class="py-3 px-4">12.5%</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">55-64</td>
+                                    <td class="py-3 px-4">9.2%</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">65+</td>
+                                    <td class="py-3 px-4">9.2%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <section class="process-chunk-two-column flex">
+                        <img
+                            src="img/usergrowth.png"
+                            alt="a user growth chart"
+                            class="user-growth"
+                            width="590"
+                            height="500"
+                        />
+                        <div class="text-container">
+                            <h3 class="text-2xl font-semibold mb-6">User Growth</h3>
+                            <p class="center-vertical">
+                                YouTube currently ranks as the 2nd most visited website worldwide. The only website to receive more traffic is its parent company, Google.
+                            </p>
+                        </div>
+                    </section>
+                    <br>
+                    <br>
+                    <h3 class="text-2xl font-semibold mb-6">Assumption</h3>
+                    <section class="process-chunk-two-column flex">
+                        <h5><strong>What are the users doing before using the app?</strong></h5>
+                        <hr class="divider" />
+                        <div class="text-container">
+                            <p class="center-vertical">
+                                Users may be engaging in various activities such as seeking information, needing entertainment, or looking for relaxation; some might have a question they want answered, be on a break, or commuting.
+                            </p>
+                            <br><br>
+                            <hr>
+                            <br>
+                        </div>
+                        
+                    </section>
+                    <section class="process-chunk-two-column flex">
+                        <div class="flex space-x-6">
+                            <h5><strong>What do users feel when using the app?</strong></h5>
+                            <hr class="divider" />
+                            <div class="text-container">
+                                <p class="center-vertical">
+                                    Users feel entertained and relaxed when they watch content that distracts them from daily stress, such as funny videos or relaxing vlogs.
+                                    <br><br>
+                                    Users feel connected when they interact with content creators or the community in comments, feeling like part of a group with shared interests.
+                                    <br><br>
+                                    Users feel motivated when watching videos that inspire personal growth, productivity, or goal-setting, such as fitness or study vlogs.
+                                    <br><br>
+                                    Users feel guilty or unproductive if they spend too much time watching videos, especially if they originally intended to watch “just one.”
+                                    <br><br>
+                                    Users feel encouraged to try new things after watching tutorial videos, recipes, or DIY guides that make activities seem achievable.
+                                    <br><br>
+                                    Users often find unskippable or repetitive ads disruptive, especially when watching shorter videos.
+                                    <br><br>
+                                    Some users dislike when content is removed, censored, or restricted without clear justification.
+                                </p>
+                                <br><br>
+                                <hr>
+                                <br>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="process-chunk-two-column flex">
+                        <div class="flex space-x-6">
+                            <h5><strong>What are the behaviours of the users?</strong></h5>
+                            <hr class="divider" />
+                            <div class="text-container">
+                                <p class="center-vertical">
+                                    Subscribers frequently revisit channels they like, creating a sense of loyalty and routine in their viewing habits.                          <br><br>
+                                    Users often scroll through recommended videos on the homepage, influenced by the algorithm to discover new content.
+                                    <br><br>
+                                    Many users go straight to the search bar to find tutorials, answers, or particular videos on topics of interest.
+                                    <br><br>
+                                    Many users try to avoid ads, either by using ad blockers, skipping ads, or subscribing to YouTube Premium for uninterrupted viewing.
+                                    <br><br>
+                                    Some users re-watch certain videos, especially tutorials, music, or inspirational content they want to revisit.
+                                </p>
+                            </div>
+                            <br><br>
+
+                        </div>
+                        <br><br>
+                
+                    </section>
+                    <br><br>
+
+                    <h5><strong>Final Three Assumption:</strong></h5>
+                    <br>
+                    <p>Many users try to avoid ads, either by using ad blockers, skipping ads, or subscribing to YouTube Premium for uninterrupted viewing.
+<br><br>
+                        Users feel motivated when watching videos that inspire personal growth, productivity, or goal-setting, such as fitness or study vlogs.
+                        <br><br>
+                        Users feel guilty or unproductive if they spend too much time watching videos, especially if they originally intended to watch “just one.”</p>
+                </div>
+
+             
+            </div>
+        </div>
+    </section>
+
+    <!-- Analysis Section -->
+    <section id="analysis" class="py-20 hidden">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-maroon">Analysis</h2>
+                
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+                    <h3 class="text-2xl font-semibold mb-6">Key Insight</h3>
+                    <ul class="list-disc pl-6 space-y-4 text-gray-700">
+                        <li>When users see ads on their videos, many of them will skip the ads if given the option.</li>
+                        <li>Users are concerned about the cost of YouTube Premium, feeling that it’s a waste of money if they’re only subscribing to skip ads, and it's not worth the money. They are willing to be patient and skip ads instead of paying.</li>
+                        <li>Users find ads to be annoying, particularly when they appear frequently or are unskippable.</li>
+                        <li>Users enjoy 5-second ads because they are brief, but they dislike ads that are 20 seconds or longer, especially when they cannot skip them.
+                        </li>
+                        <li>Users say that they feel motivated at first when watching educational or self-improvement content, but they tend to forget what they learned over time.</li>
+                        <li>Users do not feel guilty if they end up watching more YouTube videos than they originally planned.</li>
+                        <li>Users frequently listen to music on YouTube while they are working, studying, or doing housework, finding it helpful for staying focused.
+                        </li>
+                        <li>Some users feel that extended time spent on YouTube can be a waste time, especially if it affects their productivity.</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold mt-12 mb-6">Review Assumption</h3>
+                    <div class="space-y-8">
+                        <div class="p-6 bg-maroon/5 rounded-lg">
+                            <h4 class="font-semibold mb-4">Many users try to avoid ads, either by using ad blockers, skipping ads, or subscribing to YouTube Premium for uninterrupted viewing.</h4>
+                            <p class="text-gray-700">After I do interview my assumption is wrong because all the interviewees they don’t use any web to skip the ads and also don’t subscribe for Premium Youtube because they think not worth the money just for skip ads</p>
+                        </div>
+                        <div class="p-6 bg-maroon/5 rounded-lg">
+                            <h4 class="font-semibold mb-4">Users feel motivated when watching videos that inspire personal growth, productivity, or goal-setting, such as fitness or study vlogs.</h4>
+                            <p class="text-gray-700">For this assumption it in the middle because for the interviewees they just feel motivation at first but after that they slowly forget everything they had learn but for the fitness interviewees said that they have goal that is loose weight so it keep them always have motivation until they done that goal. I think that it depend on user because if they have goal it will keep them motivation in long term but if not I think it just have in short term.</p>
+                        </div>
+                        <div class="p-6 bg-maroon/5 rounded-lg">
+                            <h4 class="font-semibold mb-4">Users feel guilty or unproductive if they spend too much time watching videos, especially if they originally intended to watch “just one.”</h4>
+                            <p class="text-gray-700">My assumption is right because all the interviewees said that they always have habit to listen something that doing some stuff, and they don’t feel guilty while they watch more their planed but almost interviewees will feel unproductive like waste their time when they watch videos in long time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- Navigation Buttons -->
+                <!-- Navigation Container -->
+                <div class="sticky top-0 z-50 py-4 bg-cream/95 backdrop-blur-md shadow-sm">
+                    <nav class="nav-buttons container mx-auto flex justify-center gap-4">
+                        <button onclick="showSection('research')" class="nav-button bg-maroon text-white">Research</button>
+                        <button onclick="showSection('analysis')" class="nav-button bg-gray-200 text-gray-700">Analysis</button>
+                        <button onclick="showSection('definition')" class="nav-button bg-gray-200 text-gray-700">Definition</button>
+                        <button onclick="showSection('strategy')" class="nav-button bg-gray-200 text-gray-700">Strategy</button>
+                    </nav>
+                </div>
+    <!-- Definition Section -->
+    <section id="definition" class="py-20 hidden">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-maroon">Definition</h2>
+                
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+                    <div class="grid grid-cols-2 gap-12 mb-12">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-6">Goal</h3>
+                            <p class="text-gray-700 leading-relaxed">Our mission is to improve user pleasure on YouTube by decreasing commercial interruptions through points, promoting content that promotes personal growth and productivity, and adding features that support thoughtful viewing habits. This will build a more engaging and purposeful platform that aligns with users’ needs and aspirations.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-6">Vision</h3>
+                            <p class="text-gray-700 leading-relaxed">Transforming YouTube into a platform that not only entertains but also makes users more conscious about how long they spend time on the platform while give the users the opportunity to provide an uninterrupted, motivating, and mindful viewing experience. By tackling disruptive ads through reward points at the same time the platform can increase the number of viewers, curating content that inspires personal growth, and promoting mindful screen time management tools, YouTube will become a space where users can seamlessly balance productivity and enjoyment.</p>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-6">Personas</h3>
+                    <section class="process-chunk-two-column">
+                        
+                        <div class="persona-content">
+                          <div class="persona-column">
+                            <img
+                              src="img/Persona1.png"
+                              alt="a screenshot of a persona"
+                              width="543.49"
+                              height="353"
+                            />
+                          </div>
+              
+                          <div class="persona-column">
+                            <img
+                              src="img/Persona2.png"
+                              alt="a screenshot of a persona"
+                              width="543.49"
+                              height="353"
+                            />
+                          </div>
+                        </div>
+                      </section>
+                    </section>
+              
+
+    <!-- Strategy Section -->
+    <section id="strategy" class="py-20 hidden">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-maroon">Strategy</h2>
+                
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+                    <h3 class="text-2xl font-semibold mb-6">Strategy Statement</h3>
+                    <p class="text-gray-700 leading-relaxed mb-12">
+                        My goal is to help improve the YouTube user experience by addressing the problem of disruptive ads, promoting and boosting content, creating a feature that can create your own playlists and display them to users, and encouraging mindful viewing habits to help users avoid wasting time or feeling guilty about watching for long periods of time. This will encourage how we handle ads that can be more engaging for users with a different feature, create relevant recommendations for users’ playlists, and provide tools that allow users to control their screen time appropriately. These improvements are aimed at supporting user satisfaction, promoting personal growth, and balancing engagement and productivity.
+                    </p>
+                    <br>
+
+                    <h3 class="text-2xl font-semibold mb-6">Design Principle & Recommendation</h3>
+                    
+                      
+                                    <div>
+                                        <h4 class="font-semibold mb-2">Reward-Based Engagement</h4>
+                                        <p>Introduce a reward system that incentivizes users to engage meaningfully with content by offering tangible benefits, such as ad-skipping options, in exchange for points earned through watching videos.</p>
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <h4 class="font-semibold mb-2">Wireframe</h4>
+                                    <br>
+                                    <img src="img/wireframeoftherewardpoint1.png">
+                                    <img src="img/wireframeoftherewardpoint2.png">
+                                    <br><br>
+                                    <section class="process-chunk-two-column flex">
+                                        <div class="text-container">
+                                            <h4 class="text-2xl font-semibold mb-6">Site Map</h4>
+                                        </div>
+                                        <img
+                                            src="img/sitemapforrewardpoint.png"
+                                            alt="a site map"
+                                            class="site map"
+                                            width="590"
+                                            height="500"
+                                        />
+                                    </section>
+                                    <br><br>
+                                    <div>
+                                        <h4 class="font-semibold mb-2">Encourage Mindful Viewing</h4>
+                                        <p>Help users build healthier relationships with screen time by providing tools for self-regulation and productivity.</p>
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <h4 class="font-semibold mb-2">Wireframe</h4>
+                                    <br>
+                                    <img src="img/wireframeofthetmindful1.png">
+                                    <img src="img/wireframeofthemindful2.png">
+                                    <br><br>
+                                    <section class="process-chunk-two-column flex">
+                                        <div class="text-container">
+                                            <h4 class="text-2xl font-semibold mb-6">Site Map</h4>
+                                        </div>
+                                        <img
+                                            src="img/sitemapofthemindful.png"
+                                            alt="a site map"
+                                            class="site map"
+                                            width="590"
+                                            height="500"
+                                        />
+                                    </section>                        <br><br>
+                                    <div>
+                                        <h4 class="font-semibold mb-2">Time-Conscious Viewing</h4>
+                                        <p>Empower users to manage their time effectively on YouTube by giving tools and reminders to limit excessive screen time and promote mindful consumption.</p>
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <h4 class="font-semibold mb-2">Wireframe</h4>
+                                    <br>
+                                    <img src="img/wireframeofthetime1.png">
+                                    <img src="img/wireframeofthetime2.png">
+                                    <br><br>
+                                    <section class="process-chunk-two-column flex">
+                                        <div class="text-container">
+                                            <h4 class="text-2xl font-semibold mb-6">Site Map</h4>
+                                        </div>
+                                        <img
+                                            src="img/sitemapofthetime.png"
+                                            alt="a site map"
+                                            class="site map"
+                                            width="590"
+                                            height="500"
+                                        />
+                                    </section> 
+                                    <br><br>
+           <h3 class="text-2xl font-semibold mb-6">User Task Flow<h3>
+           <img src="img/usertaskflow.png">
+           <figcaption>Create a user task flow for each design principle to help users clearly understand and follow the features with ease</figcaption>
+                                
+                      
+    </section>
+
+    <link rel="stylesheet" href="css/section.css">
+    <script>
+        function showSection(sectionId) {
+            // Get all sections and buttons
+            const sections = document.querySelectorAll('section[id]');
+            const buttons = document.querySelectorAll('button[onclick]');
+            
+            // Update sections visibility
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.classList.remove('hidden', 'opacity-0');
+                } else {
+                    section.classList.add('opacity-0');
+                    setTimeout(() => section.classList.add('hidden'), 300);
+                }
+            });
+            
+            // Update button styles
+            buttons.forEach(button => {
+                const isActive = button.getAttribute('onclick').includes(sectionId);
+                button.classList.toggle('bg-maroon', isActive);
+                button.classList.toggle('text-white', isActive);
+                button.classList.toggle('bg-gray-200', !isActive);
+                button.classList.toggle('text-gray-700', !isActive);
+            });
+            
+            // Smooth scroll
+            const targetSection = document.getElementById(sectionId);
+            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Hide all sections except research
+            document.querySelectorAll('section[id]').forEach(section => {
+                section.classList.add('content-section');
+                if (section.id !== 'research') {
+                    section.classList.add('hidden', 'opacity-0');
+                }
+            });
+            
+            // Set initial active button
+            const researchButton = document.querySelector('button[onclick*="research"]');
+            researchButton?.classList.add('bg-maroon', 'text-white');
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-maroon/10 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-gray-600 mb-8">
+                    Thank you for exploring this design;<br>
+                    your interest is greatly appreciated
+                </p>
+                <p class="text-sm text-gray-500">© 2025 Giao Nguyen</p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="https://www.figma.com/design/fVbnYVmHmpDBlKm5SxbG1B/t?node-id=114-630&t=4RvctC5qvCbc7YdG-1" class="text-maroon hover:text-maroon/80">Style Guide</a>
+                    <a href="citation.html" class="text-maroon hover:text-maroon/80">Citations</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
